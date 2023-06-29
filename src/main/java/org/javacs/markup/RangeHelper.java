@@ -4,7 +4,7 @@ import com.sun.source.tree.CompilationUnitTree;
 import org.javacs.lsp.Position;
 import org.javacs.lsp.Range;
 
-class RangeHelper {
+public class RangeHelper {
     static Range range(CompilationUnitTree root, long start, long end) {
         var lines = root.getLineMap();
         var startLine = (int) lines.getLineNumber(start);

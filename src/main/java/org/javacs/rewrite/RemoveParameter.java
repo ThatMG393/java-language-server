@@ -5,7 +5,7 @@ import java.util.Map;
 import org.javacs.CompilerProvider;
 import org.javacs.lsp.TextEdit;
 
-class RemoveParameter implements Rewrite {
+public class RemoveParameter implements Rewrite {
     final String className, methodName;
     final String[] erasedParameterTypes;
     final int parameterToRemove;

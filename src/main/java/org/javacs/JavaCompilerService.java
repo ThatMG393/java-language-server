@@ -8,7 +8,7 @@ import java.util.logging.Logger;
 import java.util.regex.Pattern;
 import javax.tools.*;
 
-class JavaCompilerService implements CompilerProvider {
+public class JavaCompilerService implements CompilerProvider {
     // Not modifiable! If you want to edit these, you need to create a new instance
     final Set<Path> classPath, docPath;
     final Set<String> addExports;

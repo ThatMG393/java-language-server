@@ -5,7 +5,7 @@ import com.sun.source.util.*;
 import java.util.List;
 import javax.lang.model.element.Element;
 
-class FindReferences extends TreePathScanner<Void, List<TreePath>> {
+public class FindReferences extends TreePathScanner<Void, List<TreePath>> {
     final JavacTask task;
     final Element find;
 

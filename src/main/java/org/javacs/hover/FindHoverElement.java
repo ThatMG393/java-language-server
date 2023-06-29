@@ -4,7 +4,7 @@ import com.sun.source.tree.*;
 import com.sun.source.util.*;
 import javax.lang.model.element.Element;
 
-class FindHoverElement extends TreePathScanner<Element, Long> {
+public class FindHoverElement extends TreePathScanner<Element, Long> {
 
     private final JavacTask task;
     private CompilationUnitTree root;

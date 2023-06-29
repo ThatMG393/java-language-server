@@ -8,7 +8,7 @@ import java.util.*;
 import java.util.logging.Logger;
 import javax.tools.*;
 
-class SourceFileManager extends ForwardingJavaFileManager<StandardJavaFileManager> {
+public class SourceFileManager extends ForwardingJavaFileManager<StandardJavaFileManager> {
     SourceFileManager() {
         super(createDelegateFileManager());
     }

@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 import javax.lang.model.util.*;
 import javax.tools.*;
 
-class CompileBatch implements AutoCloseable {
+public class CompileBatch implements AutoCloseable {
     static final int MAX_COMPLETION_ITEMS = 50;
 
     final JavaCompilerService parent;
@@ -51,7 +51,7 @@ class CompileBatch implements AutoCloseable {
      * names, list those source files.
      */
     Set<Path> needsAdditionalSources() {
-        // Check for "class not found errors" that refer to package private classes
+        // Check for "public class not found errors" that refer to package private classes
         var addFiles = new HashSet<Path>();
         for (var err : parent.diags) {
             if (!err.getCode().equals("compiler.err.cant.resolve.location")) continue;

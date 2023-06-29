@@ -11,7 +11,7 @@ import javax.lang.model.element.Modifier;
 import javax.lang.model.element.TypeElement;
 import javax.lang.model.type.TypeKind;
 
-class WarnUnused extends TreeScanner<Void, Void> {
+public class WarnUnused extends TreeScanner<Void, Void> {
     // Copied from TreePathScanner
     // We need to be able to call scan(path, _) recursively
     private TreePath path;

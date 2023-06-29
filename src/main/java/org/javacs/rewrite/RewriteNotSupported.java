@@ -5,7 +5,7 @@ import java.util.Map;
 import org.javacs.CompilerProvider;
 import org.javacs.lsp.TextEdit;
 
-class RewriteNotSupported implements Rewrite {
+public class RewriteNotSupported implements Rewrite {
     @Override
     public Map<Path, TextEdit[]> rewrite(CompilerProvider compiler) {
         return CANCELLED;

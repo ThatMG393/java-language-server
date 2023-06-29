@@ -14,7 +14,7 @@ import java.util.Set;
 import java.util.logging.Logger;
 import org.javacs.guava.ClassPath;
 
-class ScanClassPath {
+public class ScanClassPath {
 
     // TODO delete this and implement findPublicTypeDeclarationInJdk some other way
     /** All exported modules that are present in JDK 10 or 11 */

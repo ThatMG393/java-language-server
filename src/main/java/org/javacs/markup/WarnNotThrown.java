@@ -18,7 +18,7 @@ import javax.lang.model.element.TypeElement;
 import javax.lang.model.type.DeclaredType;
 import javax.lang.model.type.TypeMirror;
 
-class WarnNotThrown extends TreePathScanner<Void, Map<TreePath, String>> {
+public class WarnNotThrown extends TreePathScanner<Void, Map<TreePath, String>> {
     private final JavacTask task;
     private CompilationUnitTree root;
     private Map<String, TreePath> declaredExceptions = new HashMap<>();

@@ -363,13 +363,13 @@ public class FileStore {
         var qualifiedName = el.getQualifiedName().toString();
         var packageName = StringSearch.mostName(qualifiedName);
         var className = StringSearch.lastName(qualifiedName);
-        // Fast path: look for text `class Foo` in file Foo.java
+        // Fast path: look for text `public class Foo` in file Foo.java
         for (var f : list(packageName)) {
             if (f.getFileName().toString().equals(className) && StringSearch.containsType(f, el)) {
                 return Optional.of(f);
             }
         }
-        // Slow path: look for text `class Foo` in any file in package
+        // Slow path: look for text `public class Foo` in any file in package
         for (var f : list(packageName)) {
             if (StringSearch.containsType(f, el)) {
                 return Optional.of(f);
@@ -381,7 +381,7 @@ public class FileStore {
     private static final Logger LOG = Logger.getLogger("main");
 }
 
-class VersionedContent {
+public class VersionedContent {
     final String content;
     final int version;
     final Instant modified = Instant.now();

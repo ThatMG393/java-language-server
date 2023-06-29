@@ -5,7 +5,7 @@ import java.util.Map;
 import org.javacs.CompilerProvider;
 import org.javacs.lsp.TextEdit;
 
-class ReplaceConstructorWithFactoryMethod implements Rewrite {
+public class ReplaceConstructorWithFactoryMethod implements Rewrite {
     final String className;
     final String[] erasedParameterTypes;
     final String factoryMethodName;

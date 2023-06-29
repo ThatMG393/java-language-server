@@ -14,7 +14,7 @@ import java.util.logging.Logger;
 import java.util.regex.Pattern;
 import java.util.stream.Stream;
 
-class InferConfig {
+public class InferConfig {
     private static final Logger LOG = Logger.getLogger("main");
 
     /** Root of the workspace that is currently open in VSCode */

@@ -3,7 +3,7 @@ package org.javacs.rewrite;
 import com.sun.source.tree.*;
 import com.sun.source.util.*;
 
-class FindVariableAt extends TreeScanner<VariableTree, Integer> {
+public class FindVariableAt extends TreeScanner<VariableTree, Integer> {
     private final SourcePositions pos;
     private CompilationUnitTree root;
 

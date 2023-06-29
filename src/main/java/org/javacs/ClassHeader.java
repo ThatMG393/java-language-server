@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStream;
 
 // Read the classfile format defined in https://docs.oracle.com/javase/specs/jvms/se11/html/jvms-4.html
-class ClassHeader {
+public class ClassHeader {
 
     final boolean isPublic, isFinal, isInterface, isAbstract, isAnnotation, isEnum, isModule;
 

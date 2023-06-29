@@ -8,7 +8,7 @@ import com.sun.source.util.TreePath;
 import com.sun.source.util.TreePathScanner;
 import com.sun.source.util.Trees;
 
-class FindInvocationAt extends TreePathScanner<TreePath, Long> {
+public class FindInvocationAt extends TreePathScanner<TreePath, Long> {
     private final JavacTask task;
     private CompilationUnitTree root;
 

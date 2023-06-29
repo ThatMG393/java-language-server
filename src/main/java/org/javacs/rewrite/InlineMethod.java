@@ -5,7 +5,7 @@ import java.util.Map;
 import org.javacs.CompilerProvider;
 import org.javacs.lsp.TextEdit;
 
-class InlineMethod implements Rewrite {
+public class InlineMethod implements Rewrite {
     final String className, methodName;
     final String[] erasedParameterTypes;
 

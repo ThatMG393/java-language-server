@@ -5,7 +5,7 @@ import java.util.Map;
 import org.javacs.CompilerProvider;
 import org.javacs.lsp.TextEdit;
 
-class ExtractMethod implements Rewrite {
+public class ExtractMethod implements Rewrite {
     final String className, methodName;
     final String[] parameterNames;
     final JavaType[] parameterTypes;

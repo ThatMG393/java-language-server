@@ -4,7 +4,7 @@ import com.sun.source.tree.*;
 import com.sun.source.util.*;
 import java.util.function.Consumer;
 
-class FindFieldReferences extends TreePathScanner<Void, Consumer<TreePath>> {
+public class FindFieldReferences extends TreePathScanner<Void, Consumer<TreePath>> {
 
     @Override
     public Void visitVariable(VariableTree t, Consumer<TreePath> forEach) {

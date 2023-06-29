@@ -5,7 +5,7 @@ import java.util.Map;
 import org.javacs.CompilerProvider;
 import org.javacs.lsp.TextEdit;
 
-class CatchException implements Rewrite {
+public class CatchException implements Rewrite {
     final String className;
     final String exceptionType;
     final int position;

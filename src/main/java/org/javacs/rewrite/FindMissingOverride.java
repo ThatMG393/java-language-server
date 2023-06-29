@@ -7,7 +7,7 @@ import java.util.logging.Logger;
 import javax.lang.model.element.*;
 import javax.lang.model.util.*;
 
-class FindMissingOverride extends TreePathScanner<Void, List<TreePath>> {
+public class FindMissingOverride extends TreePathScanner<Void, List<TreePath>> {
     private final Trees trees;
     private final Elements elements;
     private final Types types;

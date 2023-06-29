@@ -5,7 +5,7 @@ import java.util.Map;
 import org.javacs.CompilerProvider;
 import org.javacs.lsp.TextEdit;
 
-class CreateMissingField implements Rewrite {
+public class CreateMissingField implements Rewrite {
     final String className, fieldName;
     final JavaType fieldType;
 

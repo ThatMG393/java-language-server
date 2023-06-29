@@ -5,7 +5,7 @@ import java.util.Map;
 import org.javacs.CompilerProvider;
 import org.javacs.lsp.TextEdit;
 
-class ExtractConstant implements Rewrite {
+public class ExtractConstant implements Rewrite {
     final String className, fieldName;
     final JavaType type;
     final int startPosition, endPosition;

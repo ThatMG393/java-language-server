@@ -7,7 +7,7 @@ import javax.lang.model.element.Modifier;
 import org.javacs.CompileTask;
 import org.javacs.FindNameAt;
 
-class NavigationHelper {
+public class NavigationHelper {
 
     static Element findElement(CompileTask task, Path file, int line, int column) {
         for (var root : task.roots) {

@@ -14,7 +14,7 @@ import javax.tools.JavaCompiler;
 import javax.tools.JavaFileObject;
 import org.javacs.lsp.*;
 
-class Parser {
+public class Parser {
     private static final JavaCompiler COMPILER = ServiceLoader.load(JavaCompiler.class).iterator().next();
     private static final SourceFileManager FILE_MANAGER = new SourceFileManager();
 
@@ -235,7 +235,7 @@ class Parser {
         }
         if (leaf instanceof ClassTree) {
             var cls = (ClassTree) leaf;
-            return "class " + cls.getSimpleName();
+            return "public class " + cls.getSimpleName();
         }
         if (leaf instanceof BlockTree) {
             var block = (BlockTree) leaf;

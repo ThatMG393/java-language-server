@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-class FindTypeDeclarationNamed extends TreeScanner<ClassTree, String> {
+public class FindTypeDeclarationNamed extends TreeScanner<ClassTree, String> {
     private List<CharSequence> qualifiedName = new ArrayList<>();
 
     @Override

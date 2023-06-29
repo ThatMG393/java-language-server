@@ -7,7 +7,7 @@ import javax.lang.model.element.*;
 import org.javacs.FileStore;
 import org.javacs.lsp.Range;
 
-class Colorizer extends TreePathScanner<Void, SemanticColors> {
+public class Colorizer extends TreePathScanner<Void, SemanticColors> {
     private final Trees trees;
 
     Colorizer(JavacTask task) {

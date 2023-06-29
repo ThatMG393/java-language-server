@@ -5,7 +5,7 @@ import java.util.Map;
 import org.javacs.CompilerProvider;
 import org.javacs.lsp.TextEdit;
 
-class InlineField implements Rewrite {
+public class InlineField implements Rewrite {
     final String className, fieldName;
 
     InlineField(String className, String fieldName) {

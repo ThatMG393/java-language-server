@@ -19,7 +19,7 @@ import org.javacs.lsp.Position;
 import org.javacs.lsp.Range;
 import org.javacs.lsp.TextEdit;
 
-class EditHelper {
+public class EditHelper {
     final JavacTask task;
 
     EditHelper(JavacTask task) {

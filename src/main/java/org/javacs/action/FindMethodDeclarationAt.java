@@ -4,7 +4,7 @@ import com.sun.source.tree.CompilationUnitTree;
 import com.sun.source.tree.MethodTree;
 import com.sun.source.util.*;
 
-class FindMethodDeclarationAt extends TreeScanner<MethodTree, Long> {
+public class FindMethodDeclarationAt extends TreeScanner<MethodTree, Long> {
     private final SourcePositions pos;
     private CompilationUnitTree root;
 

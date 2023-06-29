@@ -13,7 +13,7 @@ import org.javacs.lsp.Command;
 import org.javacs.lsp.Position;
 import org.javacs.lsp.Range;
 
-class FindCodeLenses extends TreeScanner<Void, List<CodeLens>> {
+public class FindCodeLenses extends TreeScanner<Void, List<CodeLens>> {
     private final JavacTask task;
     private CompilationUnitTree root;
     private List<CharSequence> qualifiedName = new ArrayList<>();

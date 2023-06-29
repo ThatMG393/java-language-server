@@ -5,7 +5,7 @@ import java.util.Map;
 import org.javacs.CompilerProvider;
 import org.javacs.lsp.TextEdit;
 
-class InlineVariable implements Rewrite {
+public class InlineVariable implements Rewrite {
     final String className;
     final int position;
 

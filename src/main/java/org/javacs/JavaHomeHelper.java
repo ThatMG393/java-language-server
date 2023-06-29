@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
-class JavaHomeHelper {
+public class JavaHomeHelper {
     static final Path NOT_FOUND = Paths.get("");
 
     static Path javaHome() {

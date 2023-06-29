@@ -10,7 +10,7 @@ import javax.lang.model.element.Modifier;
 import javax.lang.model.type.DeclaredType;
 import org.javacs.CompileTask;
 
-class ScopeHelper {
+public class ScopeHelper {
     // TODO is this still necessary? Test speed. We could get rid of the extra static-imports step.
     static List<Scope> fastScopes(Scope start) {
         var scopes = new ArrayList<Scope>();

@@ -7,7 +7,7 @@ import java.util.Map;
 import java.util.Objects;
 
 /** Cache maps a file + an arbitrary key to a value. When the file is modified, the mapping expires. */
-class Cache<K, V> {
+public class Cache<K, V> {
     private static class Key<K> {
         final Path file;
         final K key;

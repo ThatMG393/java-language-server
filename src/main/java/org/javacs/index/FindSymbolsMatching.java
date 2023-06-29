@@ -12,7 +12,7 @@ import org.javacs.lsp.Range;
 import org.javacs.lsp.SymbolInformation;
 import org.javacs.lsp.SymbolKind;
 
-class FindSymbolsMatching extends TreePathScanner<Void, List<SymbolInformation>> {
+public class FindSymbolsMatching extends TreePathScanner<Void, List<SymbolInformation>> {
 
     private final ParseTask task;
     private final String query;

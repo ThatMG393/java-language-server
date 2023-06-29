@@ -334,7 +334,7 @@ public class StringSearch {
 
     private static boolean containsClass(Path file, String simpleName) {
         if (cacheContainsClass.needs(file, simpleName)) {
-            cacheContainsClass.load(file, simpleName, containsString(file, "class " + simpleName));
+            cacheContainsClass.load(file, simpleName, containsString(file, "public class " + simpleName));
             // TODO verify this by actually parsing the file
         }
         return cacheContainsClass.get(file, simpleName);
@@ -371,7 +371,7 @@ public class StringSearch {
 
     static String packageName(Path file) {
         var packagePattern = Pattern.compile("^package +(.*);");
-        var startOfClass = Pattern.compile("^[\\w ]*class +\\w+");
+        var startOfClass = Pattern.compile("^[\\w ]*public class +\\w+");
         try (var lines = FileStore.lines(file)) {
             for (var line = lines.readLine(); line != null; line = lines.readLine()) {
                 if (startOfClass.matcher(line).find()) return "";

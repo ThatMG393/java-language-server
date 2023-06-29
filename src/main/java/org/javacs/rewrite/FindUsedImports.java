@@ -6,7 +6,7 @@ import java.util.*;
 import java.util.Objects;
 import javax.lang.model.element.*;
 
-class FindUsedImports extends TreePathScanner<Void, Set<String>> {
+public class FindUsedImports extends TreePathScanner<Void, Set<String>> {
     private final Trees trees;
     private final Set<String> imports = new HashSet<String>();
 

@@ -7,7 +7,7 @@ import com.sun.source.tree.MethodTree;
 import com.sun.source.util.*;
 import java.util.function.Consumer;
 
-class FindMethodReferences extends TreePathScanner<Void, Consumer<TreePath>> {
+public class FindMethodReferences extends TreePathScanner<Void, Consumer<TreePath>> {
 
     @Override
     public Void visitMethod(MethodTree t, Consumer<TreePath> forEach) {
