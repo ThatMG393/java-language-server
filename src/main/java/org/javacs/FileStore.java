@@ -381,7 +381,7 @@ public class FileStore {
     private static final Logger LOG = Logger.getLogger("main");
 }
 
-public class VersionedContent {
+class VersionedContent {
     final String content;
     final int version;
     final Instant modified = Instant.now();
